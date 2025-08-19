@@ -1,0 +1,9 @@
+netbox-qrcode
+netbox-lifecycle
+netbox-floorplan-plugin
+netbox-topology-views
+netbox-plugin-dns
+netbox-attachments
+netbox-reorder-rack
+netbox-interface-synchronization
+netboxlabs-diode-netbox-plugin
