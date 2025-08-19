@@ -1,0 +1,14 @@
+{
+	auto_https disable_certs
+}
+
+:443 {
+        reverse_proxy netbox:8080
+        encode gzip zstd
+
+        tls /etc/ssl/private/server.crt /etc/ssl/private/server.key
+
+        log {
+                level error
+        }
+}
