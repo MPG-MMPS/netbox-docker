@@ -5,20 +5,18 @@
 # See https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
 
 PLUGINS = [
-        "netbox_qrcode",
-        "netbox_floorplan",
-        "netbox_lifecycle",
-        "netbox_topology_views",
-        "netbox_reorder_rack",
-        "netbox_interface_synchronization",
-        "netbox_diode_plugin"
-        ]
+    "netbox_qrcode",
+    "netbox_floorplan",
+    "netbox_lifecycle",
+    "netbox_topology_views",
+    "netbox_reorder_rack",
+    "netbox_interface_synchronization",
+    "netbox_diode_plugin",
+]
 
 
 PLUGINS_CONFIG = {
-    "netbox_topology_views": {
-        "allow_coordinates_saving": True
-    },
+    "netbox_topology_views": {"allow_coordinates_saving": True},
     "netbox_qrcode": {
         "rack": {
             "label_height": "24mm",
@@ -30,7 +28,7 @@ PLUGINS_CONFIG = {
             "label_qr_text_distance": "5mm",
             "text_align_horizontal": "center",
             "font_size": "12.0mm",
-            "font_weight": "bold"
+            "font_weight": "bold",
         },
         "cable": {
             "with_qr": False,
@@ -42,20 +40,20 @@ PLUGINS_CONFIG = {
             "font_size": "3.0mm",
             "text_align_vertical": "middle",
             "text_align_horizontal": "center",
-                'text_template': '<span style="writing-mode: vertical-lr; transform: scale(-1);">'
-                        '{{ obj.id }}</br>'
-                        '{{ obj.label }}</br>'
-                        '{{ obj.id }}</br>'
-                        '{{ obj.label }}</br>'
-                        '{{ obj.id }}</br>'
-                        '{{ obj.label }}</br>'
-                        '{{ obj.id }}</br>'
-                        '{{ obj.label }}</br>'
-                        '{{ obj.id }}</br>'
-                        '{{ obj.label }}</br>'
-                        '{{ obj.id }}</br>'
-                        '{{ obj.label }}</br>'
-	                    '</span>'
+            "text_template": '<span style="writing-mode: vertical-lr; transform: scale(-1);">'
+            "{{ obj.id }}</br>"
+            "{{ obj.label }}</br>"
+            "{{ obj.id }}</br>"
+            "{{ obj.label }}</br>"
+            "{{ obj.id }}</br>"
+            "{{ obj.label }}</br>"
+            "{{ obj.id }}</br>"
+            "{{ obj.label }}</br>"
+            "{{ obj.id }}</br>"
+            "{{ obj.label }}</br>"
+            "{{ obj.id }}</br>"
+            "{{ obj.label }}</br>"
+            "</span>",
         },
         "powerfeed": {
             "with_qr": False,
@@ -63,7 +61,7 @@ PLUGINS_CONFIG = {
             "label_width": "95mm",
             "text_align_horizontal": "center",
             "font_size": "12.0mm",
-            "font_weight": "bold"
-        }
-    }
+            "font_weight": "bold",
+        },
+    },
 }
