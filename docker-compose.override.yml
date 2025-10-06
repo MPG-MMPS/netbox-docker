@@ -12,9 +12,6 @@ services:
   netbox-worker:
     image: netbox:plugins
     pull_policy: never
-  netbox-housekeeping:
-    image: netbox:plugins
-    pull_policy: never
   tls:
     image: caddy:2-alpine
     restart: always
