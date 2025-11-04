@@ -14,8 +14,12 @@ PLUGINS = [
     "netbox_diode_plugin",
 ]
 
-
 PLUGINS_CONFIG = {
+    "netbox_diode_plugin": {
+        "diode_target_override": "grpc://netbox-diode-01:8080/diode",
+        "diode_username": "diode",
+        "netbox_to_diode_client_secret": "<secret>"
+    },
     "netbox_topology_views": {"allow_coordinates_saving": True},
     "netbox_qrcode": {
         "rack": {

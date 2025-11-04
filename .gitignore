@@ -11,4 +11,5 @@ configuration/ldap/*
 !configuration/ldap/ldap_config.py
 !configuration/logging.py
 !configuration/plugins.py
+!configuration/oidc.py
 super-linter.log
